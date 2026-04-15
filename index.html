@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArcPivot</title>
+  <meta name="description" content="ArcPivot is a skill based arcade competition project built for fair play, fast sessions, and clear systems." />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121821;
+      --text: #f5f7fa;
+      --muted: #9aa6b2;
+      --line: #1f2a37;
+      --accent: #f5a524;
+      --accent-dark: #d68f16;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0b0f14 0%, #101722 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      padding: 80px 0 48px;
+      text-align: center;
+    }
+
+    .brand {
+      display: inline-block;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 52px;
+      margin: 0 0 16px;
+      line-height: 1.1;
+    }
+
+    .sub {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #111;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.05);
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .card {
+      background: rgba(18, 24, 33, 0.92);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 24px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 26px;
+    }
+
+    p, li, span {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .footer {
+      padding: 32px 0 60px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .small {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .faq-item {
+      margin-bottom: 18px;
+    }
+
+    .faq-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      .sub {
+        font-size: 16px;
+      }
+
+      .hero {
+        padding-top: 56px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="brand">ArcPivot</div>
+      <h1>Precision first. Friction low.</h1>
+      <p class="sub">
+        ArcPivot is a skill based arcade competition project built for fair play,
+        fast sessions, and clear systems.
+      </p>
+
+      <div class="cta-row">
+        <a href="#" class="btn btn-primary">Enter Discord</a>
+        <a href="mailto:JOUWEMAIL@EXAMPLE.COM" class="btn btn-secondary">Contact</a>
+      </div>
+
+      <p class="small" style="margin-top:16px;">
+        Public channels and testing access will open in controlled phases.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>What ArcPivot is</h2>
+        <p>
+          ArcPivot is a modern arcade competition project focused on timing,
+          precision, and fair play. We prioritize gameplay, clarity, and
+          transparent communication.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>What ArcPivot is not</h2>
+        <ul>
+          <li>Not a casino</li>
+          <li>Not pay to win</li>
+          <li>Not a profit promise</li>
+          <li>Not built on hype</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Early access</h2>
+        <p>
+          We open features in controlled phases. Access, rules, and updates are
+          shared clearly. Details may evolve as the product develops.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>FAQ</h2>
+
+        <div class="faq-item">
+          <strong>Do I need crypto experience?</strong>
+          <span>No. We aim to keep onboarding simple and explain each step clearly.</span>
+        </div>
+
+        <div class="faq-item">
+          <strong>Is ArcPivot pay to win?</strong>
+          <span>No. Competitive outcomes are skill based. Cosmetics are cosmetic only.</span>
+        </div>
+
+        <div class="faq-item">
+          <strong>Do you make price or profit promises?</strong>
+          <span>No. We do not make price or profit promises.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      ArcPivot communicates based on real development progress. Some features may
+      change before release.
+    </section>
+  </div>
+</body>
+</html>
 
